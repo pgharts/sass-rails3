@@ -6,7 +6,7 @@ This gem provides official integration for Ruby on Rails projects with the Sass 
 
 Since Rails 3.1, new Rails projects will be already configured to use Sass. If you are upgrading to Rails 3.1 you will need to add the following to your Gemfile:
 
-    gem 'sass-rails'
+    gem 'sass-rails3'
 
 ## Configuration
 
@@ -39,7 +39,7 @@ can be found on the Sass Website with the following caveats:
 Sprockets provides some directives that are placed inside of comments called `require`, `require_tree`, and
 `require_self`. **<span style="color:#c00">DO NOT USE THEM IN YOUR SASS/SCSS FILES.</span>** They are very
 primitive and do not work well with Sass files. Instead, use Sass's native `@import` directive which
-`sass-rails` has customized to integrate with the conventions of your Rails projects.
+`sass-rails3` has customized to integrate with the conventions of your Rails projects.
 
 ## Features
 
@@ -93,6 +93,6 @@ If you need to test against local gems, use Bundler's gem :path option in the Ge
 
 ## Code Status
 
-* [![Travis CI](https://api.travis-ci.org/rails/sass-rails.png)](http://travis-ci.org/rails/sass-rails)
-* [![Gem Version](https://badge.fury.io/rb/sass-rails.png)](http://badge.fury.io/rb/sass-rails)
-* [![Dependencies](https://gemnasium.com/rails/sass-rails.png)](https://gemnasium.com/rails/sass-rails)
+* [![Travis CI](https://api.travis-ci.org/rails/sass-rails.png)](http://travis-ci.org/rails/sass-rails3)
+* [![Gem Version](https://badge.fury.io/rb/sass-rails.png)](http://badge.fury.io/rb/sass-rails3)
+* [![Dependencies](https://gemnasium.com/rails/sass-rails.png)](https://gemnasium.com/rails/sass-rails3)

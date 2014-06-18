@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class SassRailsLoggerTest < Sass::Rails::TestCase
-  test "setting a sass-rails logger as the sass default logger" do
+class SassRails3LoggerTest < Sass::Rails::TestCase
+  test "setting a sass-rails3 logger as the sass default logger" do
     within_rails_app "scss_project" do
       logger_class_name = runcmd 'ruby script/rails runner "print Sass::logger.class.name"'
       assert logger_class_name =~ /#{Regexp.escape(Sass::Rails::Logger.name)}/

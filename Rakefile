@@ -13,7 +13,7 @@ end
 desc 'Default: run unit tests.'
 task default: :test
 
-specname = "sass-rails.gemspec"
+specname = "sass-rails3.gemspec"
 deps = `git ls-files`.split("\n") - [specname]
 
 file specname => deps do
